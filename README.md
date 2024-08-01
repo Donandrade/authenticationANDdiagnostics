@@ -48,34 +48,28 @@ Performs melt curve analysis to normalize the data and extract fluorescence valu
 
    **Explanation:**
    - ![Formula \( S_{rt} \)](https://latex.codecogs.com/svg.latex?S_{rt}) is a measure of similarity.
-   - The base of the exponentiation is \( 1.05 \):
+   - The base of the exponentiation is
      ![Base](https://latex.codecogs.com/svg.latex?1.05)
-   - The coefficient that adjusts the influence of the sum of squared differences is \( -0.02 \):
+   - The coefficient that adjusts the influence of the sum of squared differences is
      ![Coefficient](https://latex.codecogs.com/svg.latex?-0.02)
-   - The summation \( \sum_{i=a}^{z} \) spans an index range ![Formula](https://latex.codecogs.com/svg.latex?{i}) from ![Formula](https://latex.codecogs.com/svg.latex?{a}) to ![Formula](https://latex.codecogs.com/svg.latex?{z}): 
+   - The summation spans an index range ![Formula](https://latex.codecogs.com/svg.latex?{i}) from ![Formula](https://latex.codecogs.com/svg.latex?{a}) to ![Formula](https://latex.codecogs.com/svg.latex?{z}): 
      ![Summation](https://latex.codecogs.com/svg.latex?\sum_{i=a}^{z})
-   - The term \( \left(f_{ri} - f_{ti}\right)^{2} \) is the square of the difference between the fluorescence values \( f_{ri} \) and \( f_{ti} \) for each index \( i \):
-     ![Term](https://latex.codecogs.com/svg.latex?\left(f_{ri}%20-%20f_{ti}\right)^{2})
+   - The term ![Term](https://latex.codecogs.com/svg.latex?\left(f_{ri}%20-%20f_{ti}\right)^{2}) is the square of the difference between the fluorescence values ![Term](https://latex.codecogs.com/svg.latex?f_{ti}%20) and ![Term](https://latex.codecogs.com/svg.latex?f_{ri}%20) for each index ![Formula](https://latex.codecogs.com/svg.latex?{i})
    - The result of the summation is multiplied by \( -0.02 \) and used as the exponent for \( 1.05 \):
      ![Summation Result](https://latex.codecogs.com/svg.latex?1.05^{-0.02%20\sum_{i=a}^{z}\left(f_{ri}%20-%20f_{ti}\right)^{2}})
 
-2. **Calculation of \( D_{rt} \):**
+2. **Calculation of![Formula \( S_{rt} \)](https://latex.codecogs.com/svg.latex?D_{rt}):**
 
-   The formula is:
-   ![Formula \( D_{rt} \)](https://latex.codecogs.com/svg.latex?D_{rt}%20=%20(1%20-%20S_{rt})%20*%20100)
+   The formula is: ![Formula \( D_{rt} \)](https://latex.codecogs.com/svg.latex?D_{rt}%20=%20(1%20-%20S_{rt})%20*%20100)
 
    **Explanation:**
-   - \( D_{rt} \) is the measure of dissimilarity.
-   - It is calculated as the difference between 1 and \( S_{rt} \), multiplied by 100 to convert it into a percentage:
+   - ![Formula \( S_{rt} \)](https://latex.codecogs.com/svg.latex?D_{rt}) is the measure of dissimilarity.
+   - It is calculated as the difference between 1 and ![Formula \( S_{rt} \)](https://latex.codecogs.com/svg.latex?S_{rt}), multiplied by 100 to convert it into a percentage:
      ![Calculation of \( D_{rt} \)](https://latex.codecogs.com/svg.latex?D_{rt}%20=%20(1%20-%20S_{rt})%20*%20100)
-   - The higher the value of \( D_{rt} \), the greater the dissimilarity between the fluorescence profiles.
+   - The higher the value of ![Formula \( S_{rt} \)](https://latex.codecogs.com/svg.latex?D_{rt}), the greater the dissimilarity between the fluorescence profiles.
 
+The ![Formula \( S_{rt} \)](https://latex.codecogs.com/svg.latex?D) matrix is saved to `dissimilaridade.txt` file.
 
-
-
-
-
-Saves the dissimilarity matrix to `dissimilaridade.txt`.
 ### Hierarchical Clustering
 - Performs hierarchical clustering on the dissimilarity matrix using average linkage method.
 - Generates a dendrogram plot to visualize the clustering results.
