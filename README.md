@@ -5,7 +5,7 @@ This repository focuses on the analysis for the selection of genetic targets aim
 
 This module is based on an R script (hrm_analysis/m144.R) for performing High-Resolution Melting (HRM) analysis on raw data. The script processes HRM data, calculates dissimilarity matrices, performs hierarchical clustering based on Genotype Confidence Percentage (GCP), and generates various plots.
 
-## Dependencies
+## DEPENDENCES
 
 The script requires the following R packages. You can install them using the commands below:
 
@@ -28,7 +28,7 @@ library(MBmca)
 library(RColorBrewer)
 ```
 
-## Script Overview
+## SCRIPT OVERVIEW
 ### Data Loading and Filtering
 Reads the HRM raw data from a file located at `../data/M144_Raw_Data.txt`.
 Filters the data based on specific temperature ranges (**77°C** to **84°C**) and adjusts column names for consistency.
@@ -74,12 +74,11 @@ The ![Formula \( S_{rt} \)](https://latex.codecogs.com/svg.latex?D) matrix is sa
 - Performs hierarchical clustering on the dissimilarity matrix using average linkage method.
 - Generates a dendrogram plot to visualize the clustering results.
 - Saves the dendrogram plot as `M144.pdf`.
+  
 ### Cluster Identification and Visualization
 - Identifies clusters in the hierarchical clustering results and assigns colors to each cluster.
 - Generates a line plot of the HRM data, color-coded by cluster, to show the fluorescence data across different temperature ranges.
 - Saves the line plot as `df_M144.pdf`.
-### Cluster Plot
-Plots a colored dendrogram with labels indicating different clusters. The colors represent different clusters and provide a visual indication of how samples are grouped based on their dissimilarities.
 
 ## USAGE
 Place your HRM data file in the `../data/` directory. The example file used is named M144_Raw_Data.txt. You can use the same name for your file, or if you choose a different name, make sure to update the filename on line 22 of the code (`hrm_analysis/m144.R`).
