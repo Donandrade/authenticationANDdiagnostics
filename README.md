@@ -1,9 +1,9 @@
 # authenticationANDdiagnostics
-Analysis for the selection of genetic targets aiming at product authentication and diagnosis in a broader context.
+This repository focuses on the analysis for the selection of genetic targets aiming at product authentication and diagnosis in a broader context.
 
-HRM Analysis
+## MODULE TO HRM ANALYSIS
 
-This repository contains an R script (`hrm_analysis/m144.R`) for performing High-Resolution Melting (HRM) analysis on raw data. The script processes HRM data, calculates dissimilarity matrices, based on Genotype Confidence Percentage (**GCP**) performs hierarchical clustering, and generates various plots.
+This module is based on an R script (hrm_analysis/m144.R) for performing High-Resolution Melting (HRM) analysis on raw data. The script processes HRM data, calculates dissimilarity matrices, performs hierarchical clustering based on Genotype Confidence Percentage (GCP), and generates various plots.
 
 ## Dependencies
 
@@ -87,7 +87,22 @@ Place your HRM data file in the `../data/` directory. The example file used is n
 Run the R script to process the data, calculate dissimilarity, perform clustering, and generate plots.
 
 ## INPUT
-An example of the input file is in the data directory `../data/M144_Raw_Data.txt`. This dataset corresponds to the first derivative of fluorescence obtained from a real-time PCR run on the LightCycler® equipment.
+An example of real data to be used as input can be found in the data directory `../data/M144_Raw_Data.txt`. The file should be in `tsv` format. This dataset corresponds to the first derivative of fluorescence obtained from a real-time PCR run on the LightCycler® equipment. Below is a sample format where the first column should be the melting curve temperature and the remaining columns should contain the respective fluorescence values for each sample. In the example shown here, the data is already in the first derivative of the fluorescence.
+
+|   Temp   | Sample1 | Sample2 | Sample3 | Sample4 | Sample5 | Sample6 | Sample7 |
+|:--------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+|  59.540  |  1.953  |  1.895  |  1.813  |  1.722  |  1.632  |  2.538  |  2.032  |
+|  59.817  |  1.953  |  1.895  |  1.813  |  1.722  |  1.632  |  2.538  |  2.032  |
+|  60.094  |  2.309  |  2.139  |  2.168  |  2.050  |  1.986  |  2.873  |  2.265  |
+|  60.371  |  2.763  |  2.445  |  2.648  |  2.510  |  2.490  |  3.338  |  2.623  |
+|  60.649  |  3.151  |  2.689  |  3.095  |  2.928  |  2.937  |  3.727  |  2.923  |
+|  60.926  |  3.363  |  2.826  |  3.348  |  3.137  |  3.154  |  3.903  |  3.026  |
+|  61.203  |  3.371  |  2.816  |  3.351  |  3.117  |  3.136  |  3.870  |  2.952  |
+|  61.480  |  3.248  |  2.673  |  3.212  |  2.970  |  2.979  |  3.707  |  2.794  |
+|  61.757  |  3.144  |  2.535  |  3.107  |  2.845  |  2.861  |  3.559  |  2.681  |
+|   ...    |   ...   |   ...   |   ...   |   ...   |   ...   |   ...   |   ...   |
+
+
 
 ## OUTPUT
 
