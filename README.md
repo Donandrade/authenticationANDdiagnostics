@@ -82,12 +82,12 @@ The ![Formula \( S_{rt} \)](https://latex.codecogs.com/svg.latex?D) matrix is sa
 Plots a colored dendrogram with labels indicating different clusters. The colors represent different clusters and provide a visual indication of how samples are grouped based on their dissimilarities.
 
 ## USAGE
-Place your HRM data file in the `../data/ directory`. The example file used is named M144_Raw_Data.txt. You can use the same name for your file, or if you choose a different name, make sure to update the filename on line 22 of the code (`hrm_analysis/m144.R`).
+Place your HRM data file in the `../data/` directory. The example file used is named M144_Raw_Data.txt. You can use the same name for your file, or if you choose a different name, make sure to update the filename on line 22 of the code (`hrm_analysis/m144.R`).
 
 Run the R script to process the data, calculate dissimilarity, perform clustering, and generate plots.
 
 ## INPUT
-An example of the input file is in the data directory. This dataset corresponds to the first derivative of fluorescence obtained from a real-time PCR run on the LightCycler® equipment.
+An example of the input file is in the data directory `../data/M144_Raw_Data.txt`. This dataset corresponds to the first derivative of fluorescence obtained from a real-time PCR run on the LightCycler® equipment.
 
 ## OUTPUT
 
