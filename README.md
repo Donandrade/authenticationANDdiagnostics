@@ -13,6 +13,13 @@ This repository is dedicated to genetic target selection and analysis for produc
   <img src="img/abstract.png" alt="General abstract" width="50%">
 </p>
 
+<div style="display: flex; align-items: center;">
+  <img src="img/abstract.png" alt="General abstract" width="300" style="flex: 1;">
+  <div style="flex: 1; padding-left: 10px;">
+    <p>This is the caption or description next to the image. You can adjust the text to fit the size of the image.</p>
+  </div>
+</div>
+
 ## GENETIC TARGET SELECTION
 Documentation in progress
 ## MODULE TO HRM ANALYSIS
