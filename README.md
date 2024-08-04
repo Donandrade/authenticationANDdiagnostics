@@ -11,6 +11,10 @@ This repository is dedicated to genetic target selection and analysis for produc
   <figcaption>Partners</figcaption>
 </figure>
 
+<figure>
+  <img src="img/abstract.png" alt="General abstract" style="width: 50%; height: auto;">
+  <figcaption>Partners</figcaption>
+</figure>
 
 ## GENETIC TARGET SELECTION
 Documentation in progress
