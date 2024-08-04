@@ -15,11 +15,11 @@ Documentation in progress
 
 This module is based on an R script (hrm_analysis/m144.R) for performing High-Resolution Melting (HRM) analysis on the first derivative of fluorescence obtained from a real-time PCR. The script processes the data, calculates dissimilarity matrices, performs hierarchical clustering based on Genotype Confidence Percentage (GCP), and generates main plots (see below).
 
-### GETTING STARTED
+### Getting started
 ```
 git clone https://github.com/your_username/your_repository.git
 ```
-### DEPENDENCES
+### Dependences
 
 The script requires the following R packages. You can install them using the commands below:
 
