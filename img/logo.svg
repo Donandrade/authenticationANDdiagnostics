@@ -1,0 +1,18 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="50%" y="10%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="24" fill="#333333">authenticationANDdiagnostics</text>
+  <text x="50%" y="20%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="14" fill="#555555">HRM Analysis for Product Authentication and Diagnosis</text>
+  
+  <!-- HRM Curve -->
+  <polyline points="50,300 100,280 150,250 200,220 250,200 300,180 350,150 400,100 450,80 500,70" 
+            fill="none" stroke="#ff6600" stroke-width="3"/>
+  
+  <!-- Axes -->
+  <line x1="50" y1="50" x2="50" y2="350" stroke="#000000" stroke-width="2"/>
+  <line x1="50" y1="350" x2="550" y2="350" stroke="#000000" stroke-width="2"/>
+  
+  <!-- Labels -->
+  <text x="300" y="380" font-family="Arial" font-size="12" fill="#000000">Temperature (°C)</text>
+  <text x="10" y="200" transform="rotate(-90, 20, 200)" font-family="Arial" font-size="12" fill="#000000">Fluorescence</text>
+</svg>
+
