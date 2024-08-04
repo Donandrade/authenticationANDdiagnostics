@@ -5,18 +5,9 @@ This repository is dedicated to genetic target selection and analysis for produc
 - *Python Module to Genetic Target Selection*: The main code used in this module is located in the directory target_selection/compartative_genomics/singletons_to_primers.py. The documentation for this module will be described soon. Essentially, this module is responsible for the identification of genomic regions that can be used as markers for product authentication and sample diagnosis.
 - *High Resolution Melting (HRM) Analysis*: Providing tools in R for HRM analysis, facilitating the comparison and diagnosis of different samples based on DNA melting characteristics.
 
-
-<figure>
-  <img src="img/abstract.png" alt="General abstract" style="width: 50%; height: auto;">
-  <figcaption>Partners</figcaption>
-</figure>
-
-<div style="display: flex; align-items: center;">
-  <img src="img/abstract.png" alt="General abstract" style="width: 50%; height: auto; margin-right: 20px;">
-  <div style="width: 50%;">
-    Partners
-  </div>
-</div>
+<p align="center">
+  <img src="img/abstract.png" alt="General abstract" width="70%">
+</p>
 
 ## GENETIC TARGET SELECTION
 Documentation in progress
@@ -24,11 +15,11 @@ Documentation in progress
 
 This module is based on an R script (hrm_analysis/m144.R) for performing High-Resolution Melting (HRM) analysis on the first derivative of fluorescence obtained from a real-time PCR. The script processes the data, calculates dissimilarity matrices, performs hierarchical clustering based on Genotype Confidence Percentage (GCP), and generates main plots (see below).
 
-## GETTING STARTED
+### GETTING STARTED
 ```
 git clone https://github.com/your_username/your_repository.git
 ```
-## DEPENDENCES
+### DEPENDENCES
 
 The script requires the following R packages. You can install them using the commands below:
 
@@ -52,18 +43,18 @@ library(RColorBrewer)
 ```
 The melting curve graphs will be plotted with the `Plotly` package, which can be exported using the additional orca command line [utility](https://github.com/plotly/orca). First, you need to install the orca library on your operating system (for details, see the [link](https://github.com/plotly/orca#installation)).
 
-## SCRIPT OVERVIEW
-### Data Loading and Filtering
+### Script Overview
+#### Data Loading and Filtering
 Reads the HRM raw data from a file located at `../data/M144_Raw_Data.txt`.
 Filters the data based on specific temperature ranges (**77°C** to **84°C**) and adjusts column names for consistency.
 
-### Melt Curve Analysis
+#### Melt Curve Analysis
 Performs melt curve analysis to normalize the data and extract fluorescence values. This analysis is used to adjust for baseline shifts and to compute fluorescence intensities.
 
-### Dissimilarity Calculation
+#### Dissimilarity Calculation
 - Computes a dissimilarity matrix considering genotype confidence percentage. This matrix quantifies the differences between - - samples based on their HRM profiles.
 
-### Calculation of Genotype Confidence Percentage (GCP)
+#### Calculation of Genotype Confidence Percentage (GCP)
 
 According to [Nunziata et al (2018)](https://doi.org/10.1016/j.plgene.2018.04.006) "Genotype confidence percentage (GCP) of HRM curves is the most commonly used statistical
 transformation of Euclidean distance between HRM curves to determine whether two curves are identical or not.". A better explanation of the procedure for calculating GCP is described below:
@@ -97,22 +88,22 @@ transformation of Euclidean distance between HRM curves to determine whether two
 
 The vlaues of ![Formula \( S_{rt} \)](https://latex.codecogs.com/svg.latex?S) and ![Formula \( D_{rt} \)](https://latex.codecogs.com/svg.latex?D)  are calculated by the script `hrm_analysis/m144.R`  and a dissimilarity matrix is saved in the dissimilarity.txt file.
 
-### Hierarchical Clustering
+#### Hierarchical Clustering
 - Performs hierarchical clustering on the dissimilarity matrix using average linkage method.
 - Generates a dendrogram plot to visualize the clustering results.
 - Saves the dendrogram plot as `M144.pdf`.
   
-### Cluster Identification and Visualization
+#### Cluster Identification and Visualization
 - Identifies clusters in the hierarchical clustering results and assigns colors to each cluster.
 - Generates a line plot of the HRM data, color-coded by cluster, to show the fluorescence data across different temperature ranges.
 - Saves the line plot as `df_M144.pdf`.
 
-## USAGE
+### Usage
 Place your HRM data file in the `../data/` directory. The example file used is named M144_Raw_Data.txt. You can use the same name for your file, or if you choose a different name, make sure to update the filename on line 22 of the code (`hrm_analysis/m144.R`).
 
 Run the R script to process the data, calculate dissimilarity, perform clustering, and generate plots.
 
-## INPUT
+### Input
 An example of real data to be used as input can be found in the data directory `../data/M144_Raw_Data.txt`. The file should be in `tsv` format. This dataset corresponds to the first derivative of fluorescence obtained from a real-time PCR run on the LightCycler® equipment. Below is a sample format where the first column should be the melting curve temperature and the remaining columns should contain the respective fluorescence values for each sample. In the example shown here, the data is already in the first derivative of the fluorescence.
 
 |   Temp   | Sample1 | Sample2 | Sample3 | Sample4 | Sample5 | Sample6 | Sample7 |
@@ -130,7 +121,7 @@ An example of real data to be used as input can be found in the data directory `
 
 
 
-## OUTPUT
+### Otput
 
 - `dissimilaridade.txt` for the dissimilarity matrix which includes the effect of genotype confidence percentage.
 - `M144.pdf`:
