@@ -17,7 +17,7 @@ This module is based on an R script (hrm_analysis/m144.R) for performing High-Re
 
 ### Getting started
 ```
-git clone https://github.com/your_username/your_repository.git
+git clone https://github.com/Donandrade/authenticationANDdiagnostics.git
 ```
 ### Dependences
 
