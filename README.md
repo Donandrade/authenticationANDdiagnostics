@@ -54,9 +54,9 @@ Filters the data based on specific temperature ranges (**77°C** to **84°C**) a
 Performs melt curve analysis to normalize the data and extract fluorescence values. This analysis is used to adjust for baseline shifts and to compute fluorescence intensities.
 
 #### Dissimilarity Calculation
-- Computes a dissimilarity matrix considering genotype confidence percentage. This matrix quantifies the differences between - - samples based on their HRM profiles.
+- Computes a dissimilarity matrix considering **G**enotype **C**onfidence **P**ercentage (**GCP**). This matrix quantifies the differences between samples based on their HRM profiles.
 
-#### Calculation of Genotype Confidence Percentage (GCP)
+#### Calculation of Genotype Confidence Percentage
 
 According to [Nunziata et al (2018)](https://doi.org/10.1016/j.plgene.2018.04.006) "Genotype confidence percentage (GCP) of HRM curves is the most commonly used statistical
 transformation of Euclidean distance between HRM curves to determine whether two curves are identical or not.". A better explanation of the procedure for calculating GCP is described below:
