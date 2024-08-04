@@ -7,7 +7,7 @@ This repository is dedicated to genetic target selection and analysis for produc
 
 <div style="display: flex; align-items: center;">
   <div style="flex: 0 0 60%; padding-right: 10px;">
-    <img src="img/abstract.png" alt="General abstract" style="width: 100%; height: auto;">
+    <img src="img/abstract.png" alt="General abstract" style="width: 60%; height: auto;">
   </div>
   <div style="flex: 0 0 40%;">
     Yesterday,<br>all my troubles seemed so far away<br>Now it looks as though they're here to stay<br>Oh, I believe in yesterday.
