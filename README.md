@@ -51,16 +51,6 @@ library(RColorBrewer)
 ```
 The melting curve graphs will be plotted with the `Plotly` package, which can be exported using the additional orca command line [utility](https://github.com/plotly/orca). First, you need to install the orca library on your operating system (for details, see the [link](https://github.com/plotly/orca#installation)).
 
-### Script Overview
-#### Data Loading and Filtering
-Reads the HRM raw data from a file located at `data/M144_Raw_Data.txt`.
-Filters the data based on specific temperature ranges (**77°C** to **84°C**) and adjusts column names for consistency.
-
-#### Melt Curve Analysis
-Performs melt curve analysis to normalize the data and extract fluorescence values. This analysis is used to adjust for baseline shifts and to compute fluorescence intensities.
-
-#### Dissimilarity Calculation
-- Computes a dissimilarity matrix considering **G**enotype **C**onfidence **P**ercentage (**GCP**). This matrix quantifies the differences between samples based on their HRM profiles.
 
 #### Calculation of Genotype Confidence Percentage
 
