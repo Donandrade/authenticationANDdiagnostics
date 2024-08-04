@@ -40,7 +40,10 @@ Performs melt curve analysis to normalize the data and extract fluorescence valu
 
 ### Calculation of Genotype Confidence Percentage (GCP)
 
-1. **Calculation of ![Formula \( S_{rt} \)](https://latex.codecogs.com/svg.latex?S_{rt}):**
+According to [Nunziata et al (2018)](https://doi.org/10.1016/j.plgene.2018.04.006) "Genotype confidence percentage (GCP) of HRM curves is the most commonly used statistical
+transformation of Euclidean distance between HRM curves to determine whether two curves are identical or not.". A better explanation of the procedure for calculating GCP is described below:
+
+1. **Calculation of a similarity matrix (![Formula \( S_{rt} \)](https://latex.codecogs.com/svg.latex?S_{rt})):**
 
    The formula is:
    ![Formula \( S_{rt} \)](https://latex.codecogs.com/svg.latex?S_{rt}%20=%201.05^{-0.02%20\sum_{i=a}^{z}\left(f_{ri}%20-%20f_{ti}\right)^{2}})
@@ -57,7 +60,7 @@ Performs melt curve analysis to normalize the data and extract fluorescence valu
    - The result of the summation is multiplied by \( -0.02 \) and used as the exponent for \( 1.05 \):
      ![Summation Result](https://latex.codecogs.com/svg.latex?1.05^{-0.02%20\sum_{i=a}^{z}\left(f_{ri}%20-%20f_{ti}\right)^{2}})
 
-2. **Calculation of ![Formula \( S_{rt} \)](https://latex.codecogs.com/svg.latex?D_{rt}):**
+2. **Calculation of a dissimilatiry matrix (![Formula \( S_{rt} \)](https://latex.codecogs.com/svg.latex?D_{rt})):**
 
    The formula is: ![Formula \( D_{rt} \)](https://latex.codecogs.com/svg.latex?D_{rt}%20=%20(1%20-%20S_{rt})%20*%20100)
 
@@ -67,7 +70,7 @@ Performs melt curve analysis to normalize the data and extract fluorescence valu
      ![Calculation of \( D_{rt} \)](https://latex.codecogs.com/svg.latex?D_{rt}%20=%20(1%20-%20S_{rt})%20*%20100)
    - The higher the value of ![Formula \( S_{rt} \)](https://latex.codecogs.com/svg.latex?D_{rt}), the greater the dissimilarity between the fluorescence profiles.
 
-The ![Formula \( S_{rt} \)](https://latex.codecogs.com/svg.latex?D) matrix is saved to `dissimilaridade.txt` file.
+The vlaues of ![Formula \( S_{rt} \)](https://latex.codecogs.com/svg.latex?S) and ![Formula \( D_{rt} \)](https://latex.codecogs.com/svg.latex?D)  are calculated by the script `hrm_analysis/m144.R`  and a dissimilarity matrix is saved in the dissimilarity.txt file.
 
 ### Hierarchical Clustering
 - Performs hierarchical clustering on the dissimilarity matrix using average linkage method.
