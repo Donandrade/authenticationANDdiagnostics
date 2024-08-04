@@ -52,7 +52,7 @@ library(RColorBrewer)
 The melting curve graphs will be plotted with the `Plotly` package, which can be exported using the additional orca command line [utility](https://github.com/plotly/orca). First, you need to install the orca library on your operating system (for details, see the [link](https://github.com/plotly/orca#installation)).
 
 
-#### Calculation of Genotype Confidence Percentage
+### Calculation of Genotype Confidence Percentage (GCP)
 
 According to [Nunziata et al (2018)](https://doi.org/10.1016/j.plgene.2018.04.006) "Genotype confidence percentage (GCP) of HRM curves is the most commonly used statistical
 transformation of Euclidean distance between HRM curves to determine whether two curves are identical or not.". A better explanation of the procedure for calculating GCP is described below:
