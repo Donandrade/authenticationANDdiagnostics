@@ -86,16 +86,6 @@ transformation of Euclidean distance between HRM curves to determine whether two
 
 The vlaues of ![Formula \( S_{rt} \)](https://latex.codecogs.com/svg.latex?S) and ![Formula \( D_{rt} \)](https://latex.codecogs.com/svg.latex?D)  are calculated by the script `hrm_analysis/m144.R`  and a dissimilarity matrix is saved in the dissimilarity.txt file.
 
-#### Hierarchical Clustering
-- Performs hierarchical clustering on the dissimilarity matrix using average linkage method.
-- Generates a dendrogram plot to visualize the clustering results.
-- Saves the dendrogram plot as `M144.pdf`.
-  
-#### Cluster Identification and Visualization
-- Identifies clusters in the hierarchical clustering results and assigns colors to each cluster.
-- Generates a line plot of the HRM data, color-coded by cluster, to show the fluorescence data across different temperature ranges.
-- Saves the line plot as `df_M144.pdf`.
-
 ### Usage
 Place your HRM data file in the `data/` directory. The example file used is named M144_Raw_Data.txt. You can use the same name for your file, or if you choose a different name, make sure to update the filename on line 22 of the code (`hrm_analysis/m144.R`).
 
