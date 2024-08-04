@@ -11,7 +11,7 @@ This repository is dedicated to genetic target selection and analysis for produc
     <img src="img/abstract.png" alt="General abstract" style="width: 50%; height: auto;">
   </div>
   <div style="flex: 0 0 50%;">
-    <table style="border-collapse: collapse; width: 100%;">
+    <table style="border-collapse: collapse; width: 50%;">
       <tr>
         <td style="text-align: left; padding: 10px;">
             Python Module to Genetic Target Selection*: The main code used in this module is located in the directory target_selection/compartative_genomics/singletons_to_primers.py. The documentation for this module will be described soon. Essentially, this module is responsible for the identification of genomic regions that can be used as markers for product authentication and sample diagnosis.
