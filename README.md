@@ -15,8 +15,6 @@ Documentation in progress
 
 ### Getting started
 
-### Getting started
-
 ```
 git clone https://github.com/Donandrade/authenticationANDdiagnostics.git
 ```
@@ -49,7 +47,7 @@ The melting curve graphs will be plotted with the `Plotly` package, which can be
 
 ### Script Overview
 #### Data Loading and Filtering
-Reads the HRM raw data from a file located at `../data/M144_Raw_Data.txt`.
+Reads the HRM raw data from a file located at `data/M144_Raw_Data.txt`.
 Filters the data based on specific temperature ranges (**77°C** to **84°C**) and adjusts column names for consistency.
 
 #### Melt Curve Analysis
@@ -103,12 +101,12 @@ The vlaues of ![Formula \( S_{rt} \)](https://latex.codecogs.com/svg.latex?S) an
 - Saves the line plot as `df_M144.pdf`.
 
 ### Usage
-Place your HRM data file in the `../data/` directory. The example file used is named M144_Raw_Data.txt. You can use the same name for your file, or if you choose a different name, make sure to update the filename on line 22 of the code (`hrm_analysis/m144.R`).
+Place your HRM data file in the `data/` directory. The example file used is named M144_Raw_Data.txt. You can use the same name for your file, or if you choose a different name, make sure to update the filename on line 22 of the code (`hrm_analysis/m144.R`).
 
 Run the R script to process the data, calculate dissimilarity, perform clustering, and generate plots.
 
 ### Input
-An example of real data to be used as input can be found in the data directory `../data/M144_Raw_Data.txt`. The file should be in `tsv` format. This dataset corresponds to the first derivative of fluorescence obtained from a real-time PCR run on the LightCycler® equipment. Below is a sample format where the first column should be the melting curve temperature and the remaining columns should contain the respective fluorescence values for each sample. In the example shown here, the data is already in the first derivative of the fluorescence.
+An example of real data to be used as input can be found in the data directory `data/M144_Raw_Data.txt`. The file should be in `tsv` format. This dataset corresponds to the first derivative of fluorescence obtained from a real-time PCR run on the LightCycler® equipment. Below is a sample format where the first column should be the melting curve temperature and the remaining columns should contain the respective fluorescence values for each sample. In the example shown here, the data is already in the first derivative of the fluorescence.
 
 |   Temp   | Sample1 | Sample2 | Sample3 | Sample4 | Sample5 | Sample6 | Sample7 |
 |:--------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
