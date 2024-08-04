@@ -6,8 +6,9 @@ This repository is dedicated to genetic target selection and analysis for produc
 - *High Resolution Melting (HRM) Analysis*: Providing tools in R for HRM analysis, facilitating the comparison and diagnosis of different samples based on DNA melting characteristics.
 
 <div style="text-align: center;">
-	<img src="img/abstract.png" alt="General abstract" width="50%">
+  <img src="img/abstract.png" alt="General abstract" width="50%">
 </div>
+
 ## GENETIC TARGET SELECTION
 Documentation in progress
 ## MODULE TO HRM ANALYSIS
