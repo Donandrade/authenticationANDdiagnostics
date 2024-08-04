@@ -19,7 +19,11 @@ library(MBmca)
 ###########################################################################
 ###########################################################################
 ###########################################################################
+<<<<<<< HEAD
 data <- read.csv("../hrm_data/M144_Raw_Data.txt", header = TRUE, sep = "\t", dec = ".",
+=======
+data <- read.csv("../data/M144_Raw_Data.txt", header = TRUE, sep = "\t", dec = ".",
+>>>>>>> e125b4f (merdeg)
                  check.names = FALSE)
 
 data2 <- c()
@@ -210,20 +214,4 @@ plot <- plot %>%
 plot
 
 orca(plot, "df_M144.pdf", width=700, height=300)
-
-
-
-##########################
-### Plot cluster
-##########################
-
-dend <- as.dendrogram(hc)
-
-labels2 <- as.data.frame(labels(dend))
-
-labels_colors(dend) <- sample_cluster_color[,3]
-
-circlize_dendrogram(dend, bg.border = NA,
-                    labels_track_height = 0.3,
-                    dend_track_height = 0.5, ) 
 
