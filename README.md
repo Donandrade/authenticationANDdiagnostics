@@ -15,6 +15,15 @@ This repository is dedicated to genetic target selection and analysis for produc
   </div>
 </div>
 
+<div style="display: flex; align-items: flex-start;">
+  <div style="flex: 0 0 40%; padding-right: 10px;">
+    <img src="img/abstract.png" alt="General abstract" style="width: 100%; height: auto;">
+  </div>
+  <div style="flex: 0 0 40%;">
+    <p>Yesterday,<br>all my troubles seemed so far away<br>Now it looks as though they're here to stay<br>Oh, I believe in yesterday.</p>
+  </div>
+</div>
+
 ## GENETIC TARGET SELECTION
 Documentation in progress
 ## MODULE TO HRM ANALYSIS
