@@ -37,8 +37,6 @@ Performs melt curve analysis to normalize the data and extract fluorescence valu
 ### Dissimilarity Calculation
 - Computes a dissimilarity matrix considering genotype confidence percentage. This matrix quantifies the differences between - - samples based on their HRM profiles.
 
-
-
 ### Calculation of Genotype Confidence Percentage (GCP)
 
 1. **Calculation of ![Formula \( S_{rt} \)](https://latex.codecogs.com/svg.latex?S_{rt}):**
@@ -58,7 +56,7 @@ Performs melt curve analysis to normalize the data and extract fluorescence valu
    - The result of the summation is multiplied by \( -0.02 \) and used as the exponent for \( 1.05 \):
      ![Summation Result](https://latex.codecogs.com/svg.latex?1.05^{-0.02%20\sum_{i=a}^{z}\left(f_{ri}%20-%20f_{ti}\right)^{2}})
 
-2. **Calculation of![Formula \( S_{rt} \)](https://latex.codecogs.com/svg.latex?D_{rt}):**
+2. **Calculation of ![Formula \( S_{rt} \)](https://latex.codecogs.com/svg.latex?D_{rt}):**
 
    The formula is: ![Formula \( D_{rt} \)](https://latex.codecogs.com/svg.latex?D_{rt}%20=%20(1%20-%20S_{rt})%20*%20100)
 
@@ -108,7 +106,7 @@ An example of real data to be used as input can be found in the data directory `
 - `dissimilaridade.txt` for the dissimilarity matrix which includes the effect of genotype confidence percentage.
 - `M144.pdf`:
 Shows the hierarchical clustering results as a dendrogram. The plot illustrates how samples are grouped into clusters based on their dissimilarity scores. For now, we suggest you check this file to select the number of K-means clusters and then choose the number of clusters. In our example, we selected `k=2` (see the `k` on line 122 of the script `hrm_analysis/m144.R`).
-- `df_M144.pdf`:  for the line plot of the first derivative plot (`-dF/dT`):
+- `df_M144.pdf`:
 Displays the `-dF/dT` of fluorescence data against the shift temperature for each sample. This step will require future optimization, as it currently depends on user adjustments. Therefore, be attentive and choose the best temperature shift for your data.
 
 ## NOTES
