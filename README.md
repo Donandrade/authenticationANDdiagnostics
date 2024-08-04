@@ -8,7 +8,7 @@ This repository is dedicated to genetic target selection and analysis for produc
 
 <div style="display: flex; justify-content: space-between;">
   <div style="flex: 0 0 50%; padding-right: 10px;">
-    <img src="img/abstract.png" alt="General abstract" style="width: 100%; height: auto;">
+    <img src="img/abstract.png" alt="General abstract" style="width: 50%; height: auto;">
   </div>
   <div style="flex: 0 0 50%;">
     <table style="border-collapse: collapse; width: 100%;">
