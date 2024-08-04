@@ -1,10 +1,20 @@
-# authenticationANDdiagnostics
-This repository focuses on the analysis for the selection of genetic targets aiming at product authentication and diagnosis in a broader context.
+# Repository for Genetic Target selection, Authentication and Diagnosis
+This repository is dedicated to genetic target selection and analysis for product authentication and diagnosis in a broader context. It also provides an R module focused on High Resolution Melting (HRM) analysis as an approach to contrast or diagnose samples.
 
+**Objectives**
+- *Python Module to Genetic Target Selection*: The main code used in this module is located in the directory target_selection/compartative_genomics/singletons_to_primers.py. The documentation for this module will be described soon. Essentially, this module is responsible for the identification of genomic regions that can be used as markers for product authentication and sample diagnosis.
+- *High Resolution Melting (HRM) Analysis*: Providing tools in R for HRM analysis, facilitating the comparison and diagnosis of different samples based on DNA melting characteristics.
+
+## GENETIC TARGET SELECTION
+Documentation in progress
 ## MODULE TO HRM ANALYSIS
 
-This module is based on an R script (hrm_analysis/m144.R) for performing High-Resolution Melting (HRM) analysis on raw data. The script processes HRM data, calculates dissimilarity matrices, performs hierarchical clustering based on Genotype Confidence Percentage (GCP), and generates various plots.
+This module is based on an R script (hrm_analysis/m144.R) for performing High-Resolution Melting (HRM) analysis on the first derivative of fluorescence obtained from a real-time PCR. The script processes the data, calculates dissimilarity matrices, performs hierarchical clustering based on Genotype Confidence Percentage (GCP), and generates main plots (see below).
 
+## GETTING STARTED
+```
+git clone https://github.com/your_username/your_repository.git
+```
 ## DEPENDENCES
 
 The script requires the following R packages. You can install them using the commands below:
@@ -33,8 +43,10 @@ The melting curve graphs will be plotted with the `Plotly` package, which can be
 ### Data Loading and Filtering
 Reads the HRM raw data from a file located at `../data/M144_Raw_Data.txt`.
 Filters the data based on specific temperature ranges (**77°C** to **84°C**) and adjusts column names for consistency.
+
 ### Melt Curve Analysis
 Performs melt curve analysis to normalize the data and extract fluorescence values. This analysis is used to adjust for baseline shifts and to compute fluorescence intensities.
+
 ### Dissimilarity Calculation
 - Computes a dissimilarity matrix considering genotype confidence percentage. This matrix quantifies the differences between - - samples based on their HRM profiles.
 
