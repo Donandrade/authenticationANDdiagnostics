@@ -5,9 +5,11 @@ This repository is dedicated to genetic target selection and analysis for produc
 - *Python Module to Genetic Target Selection*: The main code used in this module is located in the directory target_selection/compartative_genomics/singletons_to_primers.py. The documentation for this module will be described soon. Essentially, this module is responsible for the identification of genomic regions that can be used as markers for product authentication and sample diagnosis.
 - *High Resolution Melting (HRM) Analysis*: Providing tools in R for HRM analysis, facilitating the comparison and diagnosis of different samples based on DNA melting characteristics.
 
-<div style="display: flex; align-items: center;">
-  <img src="img/abstract.png" alt="General abstract" width="300" style="flex: 1;">
-  <div style="flex: 1; padding-left: 10px;">
+<div style="display: table; width: 100%;">
+  <div style="display: table-cell; width: 50%; text-align: center;">
+    <img src="img/abstract.png" alt="General abstract" style="width: 80%; max-width: 300px;">
+  </div>
+  <div style="display: table-cell; width: 50%; vertical-align: middle; padding-left: 10px;">
     <p>This is the caption or description next to the image. You can adjust the text to fit the size of the image.</p>
   </div>
 </div>
