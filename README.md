@@ -27,6 +27,7 @@ library(plotly)
 library(MBmca)
 library(RColorBrewer)
 ```
+The melting curve graphs will be plotted with the `Plotly` package, which can be exported using the additional orca command line [utility](https://github.com/plotly/orca). First, you need to install the orca library on your operating system (for details, see the [link](https://github.com/plotly/orca#installation)).
 
 ## SCRIPT OVERVIEW
 ### Data Loading and Filtering
