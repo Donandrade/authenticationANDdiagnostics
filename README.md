@@ -7,7 +7,7 @@ This repository is dedicated to genetic target selection and analysis for produc
 
 <div style="display: table; width: 100%;">
   <div style="display: table-cell; width: 50%; text-align: center;">
-    <img src="img/abstract.png" alt="General abstract" style="width: 80%; max-width: 300px;">
+    <img src="img/abstract.png" alt="General abstract" style="width: 60%; max-width: 300px;">
   </div>
   <div style="display: table-cell; width: 50%; vertical-align: middle; padding-left: 10px;">
     <p>This is the caption or description next to the image. You can adjust the text to fit the size of the image.</p>
