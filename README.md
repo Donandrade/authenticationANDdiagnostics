@@ -7,7 +7,7 @@ This repository is dedicated to genetic target selection and analysis for produc
 
 
 ![General abtract](img/graphcal_abstract.pdf)
-<img src="img/abstract.svg" alt="Example SVG" width="300" height="200">
+<img src="img/abstract.svg" alt="Example SVG" width="450" height="500">
 
 ## GENETIC TARGET SELECTION
 Documentation in progress
