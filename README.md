@@ -9,6 +9,10 @@ This repository is dedicated to genetic target selection and analysis for produc
   <img src="img/abstract.png" alt="General abstract" width="50%">
 </div>
 
+<p align="center">
+  <img src="img/abstract.png" alt="General abstract" width="50%">
+</p>
+
 ## GENETIC TARGET SELECTION
 Documentation in progress
 ## MODULE TO HRM ANALYSIS
