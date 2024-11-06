@@ -56,6 +56,18 @@ process_multiple_files <- function(file_list) {
 }
 
 # File with the list of filenames to be processed (one per line)
+# The "file_list.txt" should have the name of the with the suffif ".txt". Each file shoud contain a content with the tsv format:
+# cluster	indiv
+# 1	fus4...V..fus
+# 2	18.667...V..fus
+# 2	21.5541...V..arb
+# 2	Gritless.Sparkleberry...V..arb
+# 2	Spark.17...V..arb
+# 2	Spark.30...V..arb
+# 3	16.663...V..myrs
+# 3	17.1611...V..fus
+# 3	17.607...V..fus
+
 file_list <- "file_list.txt"  # Replace with the path to your list file
 
 # Call the function to process the files
