@@ -22,7 +22,7 @@ library(MBmca)
 data <- read.csv("../hrm_data/M144_Raw_Data.txt", header = TRUE, sep = "\t", dec = ".", check.names = FALSE)
 data2 <- c()
 
-# Filter data within temperature range 77°C to 84°C
+# Filter data within the temperature range of 77°C to 84°C. This range may vary depending on the primers/target.
 for(i in 1:nrow(data)) {
   if(data[i,1] > 77 & data[i,1] < 84) {
     tmp <- c(data[i,])
